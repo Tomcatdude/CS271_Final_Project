@@ -150,11 +150,11 @@ def get_and_avg_data(avg_over_n_days = 7):
                     range = (data_by_day_df['date'] >= current_date) & (data_by_day_df['date'] < n_days_from_current_date) #define the range of dates we select from data_by_day_df 
 
                     #compute the averages of each activity within the given range
-                    avg_sleep = np.median(data_by_day_df.loc[range]['sleeptime'])
-                    avg_drink = np.median(data_by_day_df.loc[range]['drinktime'])
-                    avg_eat = np.median(data_by_day_df.loc[range]['eattime'])
-                    avg_care = np.median(data_by_day_df.loc[range]['selfcare'])
-                    avg_step = np.median(data_by_day_df.loc[range]['step'])
+                    avg_sleep = np.mean(data_by_day_df.loc[range]['sleeptime'])
+                    avg_drink = np.mean(data_by_day_df.loc[range]['drinktime'])
+                    avg_eat = np.mean(data_by_day_df.loc[range]['eattime'])
+                    avg_care = np.mean(data_by_day_df.loc[range]['selfcare'])
+                    avg_step = np.mean(data_by_day_df.loc[range]['step'])
 
                     #add the averages to predic_df
                     temp = pd.DataFrame([[user,avg_step, avg_sleep, avg_drink, avg_eat, avg_care]], columns=['user_id','avg_step','avg_sleep','avg_drink', 'avg_eat', 'avg_care'])
