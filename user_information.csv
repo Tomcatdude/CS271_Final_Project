@@ -1,0 +1,55 @@
+user_id,birth year,age,sex,etc,depression_score,depression_class
+519,1934,88,F,"혈압,당뇨,신장약 복용",0.5,Moderate
+520,1934,88,F,Not applicable,0.375,Mild
+580,1935,87,F,심장질환 고령자,0.125,Normal
+495,1937,85,F,Not applicable,0.25,Normal
+486,1937,85,F,"혈압, 관절염, 허리다침(우울증)",0.5,Moderate
+532,1938,84,F,Not applicable,0.375,Mild
+496,1939,83,F,"당뇨, 허리협착증, 저혈당, 갑자기 쓰러지기도",0.75,Moderately severe
+572,1940,82,F,Not applicable,0.5,Moderate
+503,1940,82,F,난청이 있으며 신경통약 복용,0.125,Normal
+503,1940,82,F,난청이 있으며 신경통약 복용,0.375,Mild
+476,1940,82,F,"독거, 경증 치매",0.0,Normal
+512,1941,81,F,"허리, 어깨, 팔, 다리 등 통증으로 관절약 복용 중 / 현재 사용 중인 핸드폰은 자녀명의로 되어 있음",0.875,Moderately severe
+523,1942,80,F,Not applicable,0.5,Moderate
+530,1942,80,F,Not applicable,0.375,Mild
+499,1943,79,F,"뇌혈관질환. 고혈압, 자녀없음",0.0,Normal
+586,1944,78,F,"이석증, 거리에서 두번 정신잃고 쓰러져 구급차에 실려 간적 있음",0.25,Normal
+635,1944,78,F,"고혈압, 고지혈",0.0,Normal
+552,1944,78,F,"경도우울감, 독거, 보호자없음",1.0,Severe
+665,1944,78,F,심혈관 질환,0.0,Normal
+492,1945,77,F,"파키슨질환, 허리디스트, 고혈압",0.5,Moderate
+505,1946,76,F,Not applicable,0.5,Moderate
+540,1946,76,F,Not applicable,0.0,Normal
+544,1947,75,F,Not applicable,0.0,Normal
+569,1947,75,F,Not applicable,0.375,Mild
+504,1948,74,F,복약통에 설치 희망하심,0.5,Moderate
+508,1948,74,F,Not applicable,0.75,Moderately severe
+583,1948,74,F,무자녀,0.25,Normal
+582,1948,74,F,"차상위, 혈압, 당뇨, 관절",0.375,Mild
+644,1948,74,F,고지혈증,0.0,Normal
+529,1949,73,F,"혈압, 당뇨 , 심장 스텐실
+담석 제거수술 하였음.",0.75,Moderately severe
+661,1949,73,F,고지혈증,0.625,Moderately severe
+658,1949,73,F,"치매약, 무좀약",0.0,Normal
+230,1950,72,F,Not applicable,0.125,Normal
+527,1950,72,F,Not applicable,0.0,Normal
+664,1951,71,F,고지혈증,0.625,Moderately severe
+653,1954,68,F,고지혈증,0.5,Moderate
+672,1935,87,M,"당뇨, 혈압약 복용",0.625,Moderately severe
+634,1937,85,M,"혈압, 전립선",0.625,Moderately severe
+507,1937,85,M,"기저질환으로 고지혈증, 고혈압으로 약 복용 중 / 보청기 착용 / 심장질환",0.0,Normal
+651,1938,84,M,"심장약, 당뇨, 혈압",0.375,Mild
+232,1939,83,M,Not applicable,0.0,Normal
+650,1939,83,M,"신장약, 혈압",0.125,Normal
+585,1939,83,M,"협심증약, 고지혈약, 혈압약, 아스피린복용. 15년넘게 심장약 복용중이고 매일 허리와 고관절통증으로 물리치료다니고 계심",0.875,Moderately severe
+674,1940,82,M,항암치료중,0.0,Normal
+547,1941,81,M,Not applicable,0.125,Normal
+536,1941,81,M,Not applicable,0.25,Normal
+516,1942,80,M,협심증으로 약 복용 중,0.0,Normal
+501,1945,77,M,복약통에 설치 희망하심,0.5,Moderate
+656,1947,75,M,"혈압약, 전립선",1.0,Severe
+574,1947,75,M,Not applicable,0.0,Normal
+668,1948,74,M,"당뇨, 혈압",0.125,Normal
+655,1948,74,M,Not applicable,0.0,Normal
+662,1948,74,M,Not applicable,0.625,Moderately severe
