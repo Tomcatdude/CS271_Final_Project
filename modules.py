@@ -176,3 +176,24 @@ def get_and_avg_data(avg_over_n_days = 7):
 
     averages_df = pd.merge(n_days_df, users_df[['user_id','depression_class', 'depression_score']], on='user_id').set_index('user_id') #merge the averages with their respective depression class and deppression score
     return averages_df
+
+
+#given a number, a mean, and an std, categorize the number based on if it is within one std of the mean
+def categorize_based_on_std(num, mean, std):
+    if num > mean+std: #it is outstide the average range on the high end
+        return 2
+    if num > mean-std and num < mean+std: #it is within average range
+        return 1
+    return 0 #it is outside the average range on the low end
+
+
+#turns a column's values into values 0, 1, or 2 based on if the value is within one std of the column mean
+def categorize_column(col):
+    col_name = col.name #record the name of the column
+    col = col.to_numpy() #change it to numpy so we can see it
+    mean = np.nanmean(col) #find mean
+    std = np.nanstd(col) #find std
+    for i in range(len(col)): #replace values with categories based on if the values are within one std of mean
+        col[i] = categorize_based_on_std(col[i], mean, std)
+        
+    return pd.Series(col, name=col_name) #change the new categorized values array into a series with its name then return it
