@@ -16,7 +16,7 @@ def get_and_dayitise_data():
     day_by_day = []
 
     #go through all users in user_information.csv
-    for user in np.uniqie(users_df['user_id']): #unique so that it doesn't try to open duplicate entries
+    for user in np.unique(users_df['user_id']): #unique so that it doesn't try to open duplicate entries
        
         if(exists('user_tags/'+str(user)+'.csv')): #if the user's tags csv exists then open it and continue
             u = pd.read_csv('user_tags/'+str(user)+'.csv')
@@ -82,7 +82,7 @@ def get_and_avg_data(avg_over_n_days = 7):
     n_days_df = pd.DataFrame(columns=['user_id','avg_step','avg_sleep','avg_drink', 'avg_eat','avg_care']) #initialize the dataframe that will hold averages over n days
 
     #go through all users in user_information.csv
-    for user in np.uniqie(users_df['user_id']):
+    for user in np.unique(users_df['user_id']):
         if(exists('user_data/data_'+str(user)+'.csv')): #if the user's data csv exists then open it and continue
             user_df = pd.read_csv('user_data/data_'+str(user)+'.csv')
             
