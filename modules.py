@@ -200,11 +200,11 @@ def categorize_column(col):
     return pd.Series(col, name=col_name) #change the new categorized values array into a series with its name then return it
 
 
-#turns categories given in depression class into two categories of "low" likelihood and "high" likelihood
+#turns categories given in depression class into two categories of "low" likelihood and "high" likelihood of being depressed
 def categorize_depression(col):
     col_name = col.name #save the name
     col = col.to_numpy() #make it something we can actually work with
-    col[(col == 'Mild') | (col == 'Normal')] = 0 #entires with mild or normal are less likely to be depressed
+    col[(col == 'Mild') | (col == 'Normal')] = 0 #entries with mild or normal are less likely to be depressed
     col[col != 0] = 1 #all other entries are more likely to be depressed
 
     return pd.Series(col, name=col_name) #turn back into Series object
