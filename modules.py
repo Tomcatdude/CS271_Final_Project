@@ -177,6 +177,7 @@ def get_and_avg_data(avg_over_n_days = 7):
     averages_df = pd.merge(n_days_df, users_df[['user_id','depression_class', 'depression_score']], on='user_id').set_index('user_id') #merge the averages with their respective depression class and deppression score
     return averages_df
 
+#authored by Tom Odem on 18 November 2023
 
 #given a number, a mean, and an std, categorize the number based on if it is within one std of the mean
 def categorize_based_on_std(num, mean, std):
