@@ -198,3 +198,13 @@ def categorize_column(col):
         col[i] = categorize_based_on_std(col[i], mean, std)
         
     return pd.Series(col, name=col_name) #change the new categorized values array into a series with its name then return it
+
+
+#turns categories given in depression class into two categories of "low" likelihood and "high" likelihood
+def categorize_depression(col):
+    col_name = col.name
+    col = col.to_numpy()
+    col[(col == 'Normal')] = 0
+    col[col != 0] = 1
+
+    return pd.Series(col, name=col_name)
